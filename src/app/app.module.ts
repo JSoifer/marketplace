@@ -5,12 +5,16 @@ import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { ListingsComponent } from './listings/listings.component';
+import { PostsComponent } from './posts/posts.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ListingsComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,

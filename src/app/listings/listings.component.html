@@ -1,0 +1,8 @@
+<h3>Listings</h3>
+
+<div *ngFor='let post of posts'>
+  <h4 (click)="toggle()">{{ currentTime | date: 'mediumDate' }} - {{post.title}} ({{post.location}})</h4>
+  <div *ngIf="show">
+    <p>They should not all expand on click</p>
+  </div>
+</div>
